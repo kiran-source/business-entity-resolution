@@ -1,0 +1,58 @@
+# Root configuration pointing to challenge dataset
+random_seed: 42
+
+logging:
+  level: "INFO"
+
+data:
+  train_dir: "student_resource/dataset/train"
+  test_dir: "student_resource/dataset/test"
+  train_source1: "student_resource/dataset/train/train_source1.tsv"
+  train_source2: "student_resource/dataset/train/train_source2.tsv"
+  train_source3: "student_resource/dataset/train/train_source3.tsv"
+  train_ground_truth: "student_resource/dataset/train/train_ground_truth.tsv"
+  test_source1: "student_resource/dataset/test/test_source1.tsv"
+  test_source2: "student_resource/dataset/test/test_source2.tsv"
+  test_source3: "student_resource/dataset/test/test_source3.tsv"
+  val_fraction: 0.15
+  sample_size_train: 20000
+  sample_size_targets: 200000
+
+blocking:
+  max_candidates_per_s1: 45
+  enable_tfidf: true
+  tfidf_analyzer: "char_wb"
+  tfidf_ngram_range: [3, 4]
+  tfidf_min_similarity: 0.25
+  tfidf_top_k: 20
+
+model:
+  type: "lightgbm"
+  license: "MIT"
+  max_parameters: "under 10M"
+  learning_rate: 0.05
+  n_estimators: 320
+  num_leaves: 40
+  min_child_samples: 20
+  subsample: 0.8
+  colsample_bytree: 0.8
+  neg_pos_ratio: 3.5
+  save_model_path: "experiments/er_model.txt"
+
+calibration:
+  enabled: true
+  method: "sigmoid"
+
+threshold:
+  min_thresh: 0.15
+  max_thresh: 0.85
+  step: 0.02
+  default_fallback: 0.45
+
+output:
+  output_dir: "output"
+  matching_file: "output/matching_results.tsv"
+  candidate_file: "output/candidate_pairs.tsv"
+  submission_zip: "team_submission.zip"
+  reports_dir: "reports"
+  experiments_dir: "experiments"

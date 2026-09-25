@@ -1,0 +1,51 @@
+# Datasets and large outputs (exceed GitHub's 100 MB file limit)
+student_resource/
+dataset/
+output/
+*.zip
+*.tar.gz
+*.tsv
+*.csv
+
+# Exceptions: Keep configuration or documentation TSVs if any
+!Documentation_template.md
+
+# Python cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & caches
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+__MACOSX/

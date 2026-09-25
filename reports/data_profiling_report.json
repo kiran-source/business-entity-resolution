@@ -1,0 +1,159 @@
+{
+  "ground_truth": {
+    "total_s1_entities": 2206821,
+    "zero_matches_singletons": 123247,
+    "zero_matches_pct": 5.58,
+    "one_match": 119157,
+    "one_match_pct": 5.4,
+    "multi_matches": 1964417,
+    "multi_matches_pct": 89.02,
+    "total_matched_pairs": 7638365,
+    "average_matches_per_s1": 3.461,
+    "max_matches": 11,
+    "match_count_distribution": {
+      "0": 123247,
+      "1": 119157,
+      "2": 375212,
+      "3": 530841,
+      "4": 484115,
+      "5": 321957,
+      "6": 164868,
+      "7": 63968,
+      "8": 18680,
+      "9": 4205,
+      "10": 534,
+      "11": 37
+    },
+    "target_s2_matches": 3693619,
+    "target_s3_matches": 3944746
+  },
+  "train_source1.tsv": {
+    "file_name": "train_source1.tsv",
+    "total_records": 2206821,
+    "sampled_records": 500000,
+    "missing_names": 0,
+    "missing_name_pct": 0.0,
+    "missing_addresses": 0,
+    "missing_address_pct": 0.0,
+    "missing_countries": 0,
+    "country_distribution": {
+      "US": 1323633,
+      "India": 883188
+    },
+    "sample_duplicate_names_pct": 19.42,
+    "sample_duplicate_addrs_pct": 1.28,
+    "sample_duplicate_combos_pct": 0.0,
+    "devanagari_names_in_sample_pct": 0.0,
+    "accent_names_in_sample_pct": 0.0,
+    "mean_name_length": 24.04,
+    "mean_addr_length": 52.08
+  },
+  "train_source2.tsv": {
+    "file_name": "train_source2.tsv",
+    "total_records": 5034616,
+    "sampled_records": 500000,
+    "missing_names": 0,
+    "missing_name_pct": 0.0,
+    "missing_addresses": 168967,
+    "missing_address_pct": 3.3561,
+    "missing_countries": 0,
+    "country_distribution": {
+      "India": 2017799,
+      "US": 3016817
+    },
+    "sample_duplicate_names_pct": 4.1,
+    "sample_duplicate_addrs_pct": 4.65,
+    "sample_duplicate_combos_pct": 0.05,
+    "devanagari_names_in_sample_pct": 5.32,
+    "accent_names_in_sample_pct": 1.32,
+    "mean_name_length": 25.09,
+    "mean_addr_length": 46.28
+  },
+  "train_source3.tsv": {
+    "file_name": "train_source3.tsv",
+    "total_records": 5285603,
+    "sampled_records": 500000,
+    "missing_names": 0,
+    "missing_name_pct": 0.0,
+    "missing_addresses": 175916,
+    "missing_address_pct": 3.3282,
+    "missing_countries": 0,
+    "country_distribution": {
+      "US": 3170056,
+      "India": 2115547
+    },
+    "sample_duplicate_names_pct": 3.71,
+    "sample_duplicate_addrs_pct": 4.37,
+    "sample_duplicate_combos_pct": 0.03,
+    "devanagari_names_in_sample_pct": 2.99,
+    "accent_names_in_sample_pct": 1.49,
+    "mean_name_length": 25.2,
+    "mean_addr_length": 46.77
+  },
+  "test_source1.tsv": {
+    "file_name": "test_source1.tsv",
+    "total_records": 1732544,
+    "sampled_records": 500000,
+    "missing_names": 0,
+    "missing_name_pct": 0.0,
+    "missing_addresses": 0,
+    "missing_address_pct": 0.0,
+    "missing_countries": 0,
+    "country_distribution": {
+      "US": 663106,
+      "France": 259452,
+      "India": 809986
+    },
+    "sample_duplicate_names_pct": 19.8,
+    "sample_duplicate_addrs_pct": 1.36,
+    "sample_duplicate_combos_pct": 0.0,
+    "devanagari_names_in_sample_pct": 0.0,
+    "accent_names_in_sample_pct": 2.33,
+    "mean_name_length": 23.85,
+    "mean_addr_length": 57.17
+  },
+  "test_source2.tsv": {
+    "file_name": "test_source2.tsv",
+    "total_records": 4887273,
+    "sampled_records": 500000,
+    "missing_names": 0,
+    "missing_name_pct": 0.0,
+    "missing_addresses": 129408,
+    "missing_address_pct": 2.6479,
+    "missing_countries": 0,
+    "country_distribution": {
+      "India": 2312565,
+      "France": 703378,
+      "US": 1871330
+    },
+    "sample_duplicate_names_pct": 3.83,
+    "sample_duplicate_addrs_pct": 4.0,
+    "sample_duplicate_combos_pct": 0.05,
+    "devanagari_names_in_sample_pct": 6.31,
+    "accent_names_in_sample_pct": 4.47,
+    "mean_name_length": 25.71,
+    "mean_addr_length": 50.39
+  },
+  "test_source3.tsv": {
+    "file_name": "test_source3.tsv",
+    "total_records": 5082316,
+    "sampled_records": 500000,
+    "missing_names": 0,
+    "missing_name_pct": 0.0,
+    "missing_addresses": 136098,
+    "missing_address_pct": 2.6779,
+    "missing_countries": 0,
+    "country_distribution": {
+      "India": 2405000,
+      "France": 731615,
+      "US": 1945701
+    },
+    "sample_duplicate_names_pct": 3.34,
+    "sample_duplicate_addrs_pct": 3.86,
+    "sample_duplicate_combos_pct": 0.03,
+    "devanagari_names_in_sample_pct": 3.59,
+    "accent_names_in_sample_pct": 4.48,
+    "mean_name_length": 25.66,
+    "mean_addr_length": 48.77
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "aggregate": {
+    "total_tp_pairs": 5188,
+    "total_fp_pairs": 45,
+    "total_fn_pairs": 1075,
+    "singleton_false_positives_count": 4,
+    "singleton_false_negatives_count": 53
+  },
+  "samples": {
+    "false_positive_pairs": [
+      {
+        "s1_id": "S1-346929118",
+        "s1_name": "Nectar & Associates of Phulwari",
+        "s1_addr": "C/O Ratnesh Kumar, F.No-415B Lotus Apartment, Phulwari, Patna, Bihar",
+        "target_id": "S2-847335213",
+        "target_name": "Phulwari Exports",
+        "target_addr": "NO 992 C/O RATNESH KUMAR, F.NO-415B LOTUS APARTMENT, PHULWARI, Bihar"
+      },
+      {
+        "s1_id": "S1-428677845",
+        "s1_name": "Southern Constructions Private Limited",
+        "s1_addr": "Sbc 7, Thejaswini Building Technopark Campus, Thiruvananthapuram, Thiruvananthapuram, Trivandrum, Kerala",
+        "target_id": "S3-266930901",
+        "target_name": "Pr\u00edvate Southern Constructions Limited",
+        "target_addr": "Gnra 28, Thiruvananthapuram, Trivandrum, KL"
+      },
+      {
+        "s1_id": "S1-498662924",
+        "s1_name": "Santech Art Pvt. Ltd.",
+        "s1_addr": "Plot No.305, Ayyappa Society Madhapur, Hyderabad, Telangana",
+        "target_id": "S3-166606494",
+        "target_name": "Steel",
+        "target_addr": "Plot No. 401/B, Near Gayatri Acadamy Ayyappa Society, Madhapur, Hyderabad, Telangana"
+      },
+      {
+        "s1_id": "S1-751681405",
+        "s1_name": "Cardiology Associates",
+        "s1_addr": "1121 Greenwood Avenue, Ponca City, OK",
+        "target_id": "S2-471338858",
+        "target_name": "cardiology associates corp",
+        "target_addr": ""
+      },
+      {
+        "s1_id": "S1-519076290",
+        "s1_name": "Jay Infra Private Limited",
+        "s1_addr": "Malayankulamambasamudram Taluk Tirunelveli District, Tirunelveli, Pin, Tamil Nadu",
+        "target_id": "S2-796399401",
+        "target_name": "Jay Infra Public Limited",
+        "target_addr": "#2 MALAYANKULAMAMBASAMUDRAM TALUK TIRUNELVELI DISTRICT, PIN, \u0ba4\u0bae\u0bbf\u0bb4\u0bcd\u0ba8\u0bbe\u0b9f\u0bc1"
+      },
+      {
+        "s1_id": "S1-759182044",
+        "s1_name": "Stag LLC",
+        "s1_addr": "1200 Somerby Drive, Unit 529, Mobile, AL",
+        "target_id": "S3-988836855",
+        "target_name": "LLC Stag",
+        "target_addr": "Alabama, 9005 Spring Grove, Mobile"
+      },
+      {
+        "s1_id": "S1-249685841",
+        "s1_name": "Super Consultancy Private Limited",
+        "s1_addr": "Building 1057/1, Second Floor - 2, Gali Hira Nand, Maliwara, Delhi, Central Delhi, Delhi",
+        "target_id": "S3-65896222",
+        "target_name": "Super C\u00f3nsultancy Private Limited",
+        "target_addr": "No.1/1, Bangalore, KA"
+      },
+      {
+        "s1_id": "S1-326661103",
+        "s1_name": "New Delhi Trading Private Limited",
+        "s1_addr": "N-107, 3Rd Floor, Greater Kailash-I, New Delhi, South Delhi, Delhi",
+        "target_id": "S2-726639142",
+        "target_name": "New D\u00e9lhi Watch Limited",
+        "target_addr": "S-326 GREATER KAILASH PART I, NEW DELHI, Delhi"
+      },
+      {
+        "s1_id": "S1-958418132",
+        "s1_name": "Rosina Beatty Trusted Grid",
+        "s1_addr": "12 Anton Court, Sacramento, CA",
+        "target_id": "S3-176726384",
+        "target_name": "ROSINA BEATTY TRUSTED GRID UPTOWN",
+        "target_addr": "#14 Anton Ct, Sacramento, California"
+      },
+      {
+        "s1_id": "S1-278244769",
+        "s1_name": "Andi Grabowski, P.A.",
+        "s1_addr": "1122 Old Rail Lane, Bldg BUILDING, Park City, UT",
+        "target_id": "S3-365524102",
+        "target_name": "andi grabowski, p.a.",
+        "target_addr": ""
+      },
+      {
+        "s1_id": "S1-160242888",
+        "s1_name": "Alpha Properties Private Limited",
+        "s1_addr": "C-1/1296, Vasant Kunj, New Delhi, Delhi",
+        "target_id": "S2-263719676",
+        "target_name": "\u0905\u0932\u094d\u092b\u093e \u090f\u0928\u0930\u094d\u091c\u0940 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+        "target_addr": "C-32/D, NEW DELHI, Delhi"
+      },
+      {
+        "s1_id": "S1-941588518",
+        "s1_name": "Painters Union Local No 554",
+        "s1_addr": "17 Arrandale Avenue, Great Neck, NY",
+        "target_id": "S2-452107729",
+        "target_name": "PAINTERS UNION LOCAL  NO 384",
+        "target_addr": ""
+      },
+      {
+        "s1_id": "S1-176307248",
+        "s1_name": "Guru Market (India) Private Limited",
+        "s1_addr": "Block. H-1/A, Sector-63, Uttar Pradesh, Plot No. 20, Noida, Ghaziabad",
+        "target_id": "S2-903444688",
+        "target_name": "Guru Foods Private  Limited",
+        "target_addr": "NO 1 & 2, PLOT NO. 506, SECTOR-1, VASHUNDRA, GHAZIABAD, GHAZIABAD, Uttar Pradesh"
+      },
+      {
+        "s1_id": "S1-933207581",
+        "s1_name": "Better Apex Greenland Inc",
+        "s1_addr": "6267 Lakeshore Drive, House Springs, MO",
+        "target_id": "S3-610056945",
+        "target_name": "Better Apex Greenland Group",
+        "target_addr": "6280 Lakeshore Drive, House Springs, Missouri"
+      },
+      {
+        "s1_id": "S1-760830552",
+        "s1_name": "Amara Mckee Bce Corp",
+        "s1_addr": "2337 Central Avenue, Cicero, IL",
+        "target_id": "S3-309651365",
+        "target_name": "Amara Mckee Bce Northside Corp",
+        "target_addr": "2346 Central Ave, Cicero, Illinois"
+      }
+    ],
+    "false_negative_pairs": [
+      {
+        "s1_id": "S1-518508156",
+        "s1_name": "Sree Constructions Private Limited",
+        "s1_addr": "No 28/2056, Illathum, Mugal, Mazjith Road, Ernakulam, Kerala",
+        "target_id": "S2-393036083",
+        "target_name": "\u0d36\u0d4d\u0d30\u0d40 \u0d15\u0d7a\u0d38\u0d4d\u0d1f\u0d4d\u0d30\u0d15\u0d4d\u0d37\u0d7b\u0d38\u0d4d \u0d2a\u0d4d\u0d30\u0d48\u0d35\u0d31\u0d4d\u0d31\u0d4d \u0d32\u0d3f\u0d2e\u0d3f\u0d31\u0d4d\u0d31\u0d21\u0d4d",
+        "target_addr": "\u0d15\u0d47\u0d30\u0d33\u0d02, ERNAKULAM, #28/2056"
+      },
+      {
+        "s1_id": "S1-65720315",
+        "s1_name": "Dermatology Clinic",
+        "s1_addr": "7502 Arlene Avenue, Willowbrook, IL",
+        "target_id": "S2-709491899",
+        "target_name": "Dermatology Clieilc",
+        "target_addr": ""
+      },
+      {
+        "s1_id": "S1-806290969",
+        "s1_name": "Apex Ventures Pvt Ltd",
+        "s1_addr": "Panikkasery Door No 474Beach Ward Ambalapuzha Taluk, Alleppey District, Alappuzha, Kerala",
+        "target_id": "S2-366901774",
+        "target_name": "\u0d05\u0d2a\u0d46\u0d15\u0d4d\u0d38\u0d4d \u0d35\u0d46\u0d1e\u0d4d\u0d1a\u0d47\u0d34\u0d4d\u0d38\u0d4d \u0d2a\u0d4d\u0d30\u0d48\u0d35\u0d31\u0d4d\u0d31\u0d4d \u0d32\u0d3f\u0d2e\u0d3f\u0d31\u0d4d\u0d31\u0d21\u0d4d",
+        "target_addr": "PANIKKASERY DOOR NO 474BEACH WARD AMBALAPUZHA TALUK, ALAPPUZHA, ALLEPPEY DISTRICT, Kerala"
+      },
+      {
+        "s1_id": "S1-806290969",
+        "s1_name": "Apex Ventures Pvt Ltd",
+        "s1_addr": "Panikkasery Door No 474Beach Ward Ambalapuzha Taluk, Alleppey District, Alappuzha, Kerala",
+        "target_id": "S2-894544242",
+        "target_name": "\u0d05\u0d2a\u0d46\u0d15\u0d4d\u0d38\u0d4d \u0d35\u0d46\u0d1e\u0d4d\u0d1a\u0d47\u0d34\u0d4d\u0d38\u0d4d \u0d2a\u0d4d\u0d30\u0d48\u0d35\u0d31\u0d4d\u0d31\u0d4d \u0d32\u0d3f\u0d2e\u0d3f\u0d31\u0d4d\u0d31\u0d21\u0d4d",
+        "target_addr": "Kerala, PANIKKASERY DOOR NO 474BEACH WARD AMBALAPUZHA TALUK, ALAPPUZHA, ALLEPPEY DISTRICT"
+      },
+      {
+        "s1_id": "S1-967735640",
+        "s1_name": "Sree Impex LLP",
+        "s1_addr": "215, Dhalipara, Maheshgote Krishnapur, Newtown, Kolkata, Kolkata, Howrah, West Bengal",
+        "target_id": "S2-155233311",
+        "target_name": "\u09b6\u09cd\u09b0\u09c0 \u0987\u09ae\u09cd\u09aa\u09c7\u0995\u09cd\u09b8 \u098f\u09b2\u098f\u09b2\u09aa\u09bf",
+        "target_addr": "215, NORTH 24 PARGANAS, \u09aa\u09b6\u09cd\u099a\u09bf\u09ae\u09ac\u0999\u09cd\u0997"
+      },
+      {
+        "s1_id": "S1-967735640",
+        "s1_name": "Sree Impex LLP",
+        "s1_addr": "215, Dhalipara, Maheshgote Krishnapur, Newtown, Kolkata, Kolkata, Howrah, West Bengal",
+        "target_id": "S2-708223021",
+        "target_name": "\u09b6\u09cd\u09b0\u09c0 \u0987\u09ae\u09cd\u09aa\u09c7\u0995\u09cd\u09b8 \u098f\u09b2\u098f\u09b2\u09aa\u09bf",
+        "target_addr": "215, NORTH 24 PARGANAS, HOWRAH, West Bengal"
+      },
+      {
+        "s1_id": "S1-637520401",
+        "s1_name": "Best Vijay Systems Private Limited",
+        "s1_addr": "402, The Great Eastern Galleria, Plot No. 20, Sector - 4, Nerul, Navi Mumbai, Maharashtra",
+        "target_id": "S2-974316224",
+        "target_name": "bestvijaysystems.com",
+        "target_addr": "NO. 874 402, THE GREAT EASTERN GALLERIA, PLOT NO. 20, SECTOR - 4, NERUL, Maharashtra"
+      },
+      {
+        "s1_id": "S1-108888770",
+        "s1_name": "Mumbai Development Private Limited",
+        "s1_addr": "71/73, Floor-2, Plot-65, Bilakhadi Chamber, Saint Mary Road, Mazgaon, Mumbai, Maharashtra",
+        "target_id": "S2-72486797",
+        "target_name": "Mumbai Devel0pment Pr\u00edvate Limited",
+        "target_addr": "71/73, FLOOR-2, PLOT-65, BILAKHADI CHAMBER, SAINT MARY ROAD, MAZGAON, MUMBAI, \u092e\u0939\u093e\u0930\u093e\u0937\u094d\u091f\u094d\u0930"
+      },
+      {
+        "s1_id": "S1-907556285",
+        "s1_name": "Great Products Private Limited",
+        "s1_addr": "C-65, First Floor New Ashok Nagar, New Ashok Nagar, East Delhi, Delhi",
+        "target_id": "S2-416672809",
+        "target_name": "\u0917\u094d\u0930\u0947\u091f \u092a\u094d\u0930\u094b\u0921\u0915\u094d\u091f\u094d\u0938 \u092a\u094d\u0930\u093e\u0907\u0935\u0947\u091f \u0932\u093f\u092e\u093f\u091f\u0947\u0921",
+        "target_addr": "C-65, Delhi, EAST DELHI, NEW ASHOK NAGAR, FIRST FLOOR NEW ASHOK NAGAR"
+      },
+      {
+        "s1_id": "S1-265938918",
+        "s1_name": "Gulf Farmers Inc",
+        "s1_addr": "99 Bradbrook Drive, Ona, WV",
+        "target_id": "S2-837595519",
+        "target_name": "GULFFARMERS.COM",
+        "target_addr": "ONA, 0099 BRADBROOK DRIVE, WV"
+      },
+      {
+        "s1_id": "S1-455541032",
+        "s1_name": "Rj Fe Private Limited",
+        "s1_addr": "Uttar Pradesh, Banda, C/O Rekha Fatehganj Dadhwa Manpur Naraini, Banda",
+        "target_id": "S2-165687574",
+        "target_name": "Smt rjfe.com",
+        "target_addr": "C/O REKHA FATEHGANJ DADHWA MANPUR NARAINI, BANDA, \u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936"
+      },
+      {
+        "s1_id": "S1-234587135",
+        "s1_name": "Piedmont Committee",
+        "s1_addr": "1316 Hampton Court, Nashville, TN",
+        "target_id": "S3-597899712",
+        "target_name": "Piedmont Piedmont Committee Authority",
+        "target_addr": ""
+      },
+      {
+        "s1_id": "S1-169008536",
+        "s1_name": "Urban Projects",
+        "s1_addr": "C/O Alauddin Molla Noorpur Ramnagar 24 Parganas, Diamond Harbour - I, South 24 Parganas, West Bengal",
+        "target_id": "S2-458855873",
+        "target_name": "\u0986\u09b0\u09ac\u09be\u09a8 \u09aa\u09cd\u09b0\u099c\u09c7\u0995\u09cd\u099f\u09b8",
+        "target_addr": "H.NO 366 C/O ALAUDDIN MOLLA NOORPUR RAMNAGAR 24 PARGANAS, DIAMOND HARBOUR - I, SOUTH 24 PARGANAS, West Bengal"
+      },
+      {
+        "s1_id": "S1-169008536",
+        "s1_name": "Urban Projects",
+        "s1_addr": "C/O Alauddin Molla Noorpur Ramnagar 24 Parganas, Diamond Harbour - I, South 24 Parganas, West Bengal",
+        "target_id": "S2-121375598",
+        "target_name": "\u0986\u09b0\u09ac\u09be\u09a8 \u09aa\u09cd\u09b0\u099c\u09c7\u0995\u09cd\u099f\u09b8",
+        "target_addr": "#366 C/O ALAUDDIN MOLLA NOORPUR RAMNAGAR 24 PARGANAS, DIAMOND HARBOUR - I, SOUTH 24 PARGANAS, West Bengal"
+      },
+      {
+        "s1_id": "S1-169008536",
+        "s1_name": "Urban Projects",
+        "s1_addr": "C/O Alauddin Molla Noorpur Ramnagar 24 Parganas, Diamond Harbour - I, South 24 Parganas, West Bengal",
+        "target_id": "S3-451617552",
+        "target_name": "Smt Ariaarc",
+        "target_addr": "Block C-522 C/o Alauddin Molla Noorpur Ramnagar 24 Parganas, Diamond Harbour - I, South 24 Parganas, \u09aa\u09b6\u09cd\u099a\u09bf\u09ae\u09ac\u0999\u09cd\u0997"
+      }
+    ],
+    "singleton_false_positives": [
+      {
+        "s1_id": "S1-929123025",
+        "s1_name": "Pune Services Private Limited",
+        "s1_addr": "Shop No 15 Ranakapur Darshan Acandi Road Yerwada, Pune, Maharashtra",
+        "false_matches": [
+          "S3-932644179"
+        ]
+      },
+      {
+        "s1_id": "S1-768191150",
+        "s1_name": "Jett Vernal, LLC",
+        "s1_addr": "1230 6th Avenue, Unit Suite 310, Des Moines, IA",
+        "false_matches": [
+          "S3-532323639"
+        ]
+      },
+      {
+        "s1_id": "S1-946898546",
+        "s1_name": "Sree Brothers Limited",
+        "s1_addr": "Jaipur, S-1, Ii F, Chitrakut Yojna, Gandhipath, Rajasthan, 3/17",
+        "false_matches": [
+          "S3-891148454",
+          "S2-652137498"
+        ]
+      },
+      {
+        "s1_id": "S1-639012333",
+        "s1_name": "Oncology Care",
+        "s1_addr": "1809 Spencer Street, Greensboro, NC",
+        "false_matches": [
+          "S2-204234797"
+        ]
+      }
+    ],
+    "multi_match_partial_errors": [
+      {
+        "s1_id": "S1-518508156",
+        "true_count": 5,
+        "pred_count": 4,
+        "tp_count": 4,
+        "f05": 0.9524
+      },
+      {
+        "s1_id": "S1-65720315",
+        "true_count": 4,
+        "pred_count": 3,
+        "tp_count": 3,
+        "f05": 0.9375
+      },
+      {
+        "s1_id": "S1-806290969",
+        "true_count": 4,
+        "pred_count": 2,
+        "tp_count": 2,
+        "f05": 0.8333
+      },
+      {
+        "s1_id": "S1-967735640",
+        "true_count": 3,
+        "pred_count": 1,
+        "tp_count": 1,
+        "f05": 0.7143
+      },
+      {
+        "s1_id": "S1-637520401",
+        "true_count": 6,
+        "pred_count": 5,
+        "tp_count": 5,
+        "f05": 0.9615
+      },
+      {
+        "s1_id": "S1-108888770",
+        "true_count": 3,
+        "pred_count": 2,
+        "tp_count": 2,
+        "f05": 0.9091
+      },
+      {
+        "s1_id": "S1-907556285",
+        "true_count": 2,
+        "pred_count": 1,
+        "tp_count": 1,
+        "f05": 0.8333
+      },
+      {
+        "s1_id": "S1-265938918",
+        "true_count": 2,
+        "pred_count": 1,
+        "tp_count": 1,
+        "f05": 0.8333
+      },
+      {
+        "s1_id": "S1-455541032",
+        "true_count": 4,
+        "pred_count": 3,
+        "tp_count": 3,
+        "f05": 0.9375
+      },
+      {
+        "s1_id": "S1-234587135",
+        "true_count": 5,
+        "pred_count": 4,
+        "tp_count": 4,
+        "f05": 0.9524
+      },
+      {
+        "s1_id": "S1-169008536",
+        "true_count": 4,
+        "pred_count": 1,
+        "tp_count": 1,
+        "f05": 0.625
+      },
+      {
+        "s1_id": "S1-146356467",
+        "true_count": 3,
+        "pred_count": 2,
+        "tp_count": 2,
+        "f05": 0.9091
+      },
+      {
+        "s1_id": "S1-715992753",
+        "true_count": 2,
+        "pred_count": 1,
+        "tp_count": 1,
+        "f05": 0.8333
+      },
+      {
+        "s1_id": "S1-190705285",
+        "true_count": 2,
+        "pred_count": 1,
+        "tp_count": 1,
+        "f05": 0.8333
+      },
+      {
+        "s1_id": "S1-298911800",
+        "true_count": 3,
+        "pred_count": 2,
+        "tp_count": 2,
+        "f05": 0.9091
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "experiment_name": "baseline_exact_match",
+  "timestamp": "2026-09-25 14:44:19",
+  "s1_eval_count": 2000,
+  "targets_indexed": 100000,
+  "total_predicted_matches": 8,
+  "metrics": {
+    "macro_precision": 0.0625,
+    "macro_recall": 0.05953,
+    "macro_f05": 0.061,
+    "total_entities": 2000,
+    "singleton_count": 117,
+    "singleton_accuracy": 1.0,
+    "non_singleton_count": 1883,
+    "non_singleton_f05": 0.00266
+  },
+  "runtime_seconds": 8.09
+}
