@@ -31,6 +31,11 @@ def main():
         help="Run only data profiling phase.",
     )
     parser.add_argument(
+        "--inference-only",
+        action="store_true",
+        help="Run test inference directly using pre-trained model.",
+    )
+    parser.add_argument(
         "--test-limit",
         type=int,
         default=None,
@@ -43,6 +48,12 @@ def main():
     if args.profile_only:
         pipeline.run_profiling()
         print("Data profiling completed successfully.")
+        return 0
+
+    if args.inference_only:
+        print("Running Inference-Only using pre-trained model...")
+        zip_path = pipeline.run_inference(test_s1_limit=args.test_limit)
+        print(f"\nFinal submission successfully packaged into: {zip_path}")
         return 0
 
     # 1. Profile data

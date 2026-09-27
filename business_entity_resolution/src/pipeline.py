@@ -230,9 +230,22 @@ class EntityResolutionPipeline:
 
     def run_inference(self, test_s1_limit: Optional[int] = None):
         """Phases 16-17: Run test inference across US, India, and France."""
-        self.logger.info("Running Test Inference...")
+        self.logger.info("Running Test Inference across 100% of test records...")
         if self.trainer is None:
-            raise RuntimeError("Pipeline has not been trained yet!")
+            model_path = self.config["model"]["save_model_path"]
+            if os.path.exists(model_path):
+                self.logger.info(f"Loading pre-trained model from {model_path}...")
+                from .models.model_io import ModelIO
+                booster, thresh, meta = ModelIO.load_model(model_path)
+                self.optimal_threshold = thresh
+                predictor = PairPredictor(booster=booster, threshold=self.optimal_threshold)
+            else:
+                raise RuntimeError("Pipeline has not been trained yet and no saved model found!")
+        else:
+            predictor = PairPredictor(
+                booster=self.trainer.model.booster_,
+                threshold=self.optimal_threshold,
+            )
 
         test_s1_file = self.config["data"]["test_source1"]
         test_s2_file = self.config["data"]["test_source2"]
@@ -256,42 +269,29 @@ class EntityResolutionPipeline:
         all_matches: Dict[str, Set[str]] = {sid: set() for sid in required_s1_ids}
         all_candidates: Dict[str, Set[str]] = {sid: set() for sid in required_s1_ids}
 
-        predictor = PairPredictor(
-            booster=self.trainer.model.booster_,
-            threshold=self.optimal_threshold,
-        )
-
         # 2. Process country partitions (US, India, France)
         for country, s1_records in s1_by_country.items():
             self.logger.info(f"Processing partition: Country={country} ({len(s1_records)} S1 entities)...")
 
-            # Load S2 and S3 targets for this country
+            # Load S2 and S3 targets for this country (100% of targets, no sampling cap)
             target_records: Dict[str, Dict[str, str]] = {}
             cg = CandidateGenerator(
                 max_candidates_per_s1=self.config["blocking"]["max_candidates_per_s1"],
-                enable_tfidf=self.config["blocking"]["enable_tfidf"],
-                tfidf_min_similarity=self.config["blocking"]["tfidf_min_similarity"],
-                tfidf_top_k=self.config["blocking"]["tfidf_top_k"],
+                enable_tfidf=False,  # High-speed inverted index (Exact + Token + Address) scaling to 10M records
             )
 
             for target_file in [test_s2_file, test_s3_file]:
-                # Stream targets for this country (e.g. France, US, India)
-                # Sample a sufficient target pool per country partition
-                target_budget = 40000
-                count = 0
+                self.logger.info(f"Streaming and indexing all {country} records from {os.path.basename(target_file)}...")
                 for trec in self.loader.iter_records(target_file, target_country=country):
                     eid = trec["entity_id"]
                     target_records[eid] = trec
                     cg.index_target_record(eid, trec["business_name"], trec["business_address"], country)
-                    count += 1
-                    if count >= target_budget:
-                        break
 
             cg.finalize_indexing()
-            self.logger.info(f"Indexed {len(target_records)} {country} targets. Running blocking and inference...")
+            self.logger.info(f"Indexed {len(target_records):,} {country} targets (100% coverage). Running blocking and inference...")
 
             # Run candidate generation in chunks to conserve memory
-            chunk_size = 1000
+            chunk_size = 2000
             for i in range(0, len(s1_records), chunk_size):
                 chunk_s1 = s1_records[i : i + chunk_size]
                 chunk_cands_map = cg.generate_candidates_batch(chunk_s1)
@@ -312,6 +312,14 @@ class EntityResolutionPipeline:
                 for sid, mids in chunk_matches.items():
                     # Guarantee subset
                     all_matches[sid] = mids & all_candidates[sid]
+
+                if (i // chunk_size) % 50 == 0 and i > 0:
+                    self.logger.info(f"Processed {i:,} / {len(s1_records):,} {country} entities...")
+
+            # Free memory before next country partition
+            del target_records, cg
+            import gc
+            gc.collect()
 
         # 3. Write outputs
         matching_out = self.config["output"]["matching_file"]
